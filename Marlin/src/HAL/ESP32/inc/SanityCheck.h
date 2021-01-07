@@ -37,6 +37,6 @@
   #error "Only enable one WiFi option, either WIFISUPPORT or ESP3D_WIFISUPPORT."
 #endif
 
-#if DISABLED(SERIAL_PORT_2) && ESP3D_WIFISUPPORT
+#if DISABLED(SERIAL_PORT_2) && ENABLED(ESP3D_WIFISUPPORT)
   #error "SERIAL_PORT_2 -1 required for ESP3D Lib to get feedback from the host"
 #endif
